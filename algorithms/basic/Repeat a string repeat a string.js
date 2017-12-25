@@ -10,8 +10,15 @@ Global String Object
 
 
 function repeatStringNumTimes(str, num) {
-  // repeat after me
+if (num >= 0) {
+  var x = str;
+  for(i=1;i<num;i++) {
+  str = str + x;
+}
+  
+} else {
+  str = '';
+}
   return str;
 }
-
 repeatStringNumTimes("abc", 3);
